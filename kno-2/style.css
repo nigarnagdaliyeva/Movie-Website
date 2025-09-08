@@ -1,0 +1,281 @@
+:root {
+  --logo-font: "neue-haas-grotesk-display", sans-serif;
+  --main-font: monospace;
+  --font-family: "panoptica-sans", sans-serif;
+  --font-second: "panoptica-egyptian", sans-serif;
+  --font-different: "panoptica-octagonal", sans-serif;
+  --font-different-script: "panoptica-script", sans-serif;
+  --font-Hitchcock: "professor-minty", sans-serif;
+  --cyrillic-font: "omnes-cyrillic-semicondensed", sans-serif;
+
+  --nigi: "omnes-cyrillic-semicondensed", sans-serif;
+  --soap: "soap", sans-serif;
+  --font-size: 16px;
+  --color: #272727;
+  --color-second: #969696;
+  --color-third: #fc4b0c;
+  --color-fourth: #341b35;
+}
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  padding: 10px 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #272722;
+}
+.logo {
+  width: 160px;
+  margin-top: -10px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  font-family: "nudista-web", sans-serif;
+}
+.navbar a:hover {
+  color: #cbcbcb;
+}
+#sign-in {
+  margin-left: 90px;
+}
+.symbol {
+  font-size: 14px; /* Sembole istediğiniz boyutu verin */
+  display: inline-block; /* Gerekirse inline-block olarak ayarlayın */
+}
+
+#sign-in:hover .symbol {
+  animation: spin 1s linear infinite; /* Sonsuz dönme */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.movie-1 {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+/*   animation: shake 2s infinite alternate;  text-shadow: 2px 2px 0px black; */
+h1 {
+  color: #272727;
+  font-size: 110px;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  animation: shake 2s infinite alternate;
+  font-weight: bold;
+}
+h2 {
+  color: #272727;
+  font-size: 1.5rem;
+  font-family: monospace;
+  font-weight: 500;
+  top: 1;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-0.3px, -0.3px);
+  }
+  20% {
+    transform: translate(0.3px, -0.3px);
+  }
+  30% {
+    transform: translate(-0.3px, 0.3px);
+  }
+  40% {
+    transform: translate(0.3px, 0.3px);
+  }
+  50% {
+    transform: translate(-0.3px, -0.3px);
+  }
+  60% {
+    transform: translate(0.3px, -0.3px);
+  }
+  70% {
+    transform: translate(-0.3px, 0.3px);
+  }
+  80% {
+    transform: translate(0.3px, 0.3px);
+  }
+  90% {
+    transform: translate(-0.3px, 0);
+  }
+  100% {
+    transform: translate(0.3px, 0);
+  }
+}
+.kno {
+  margin-top: 10px;
+  width: 500px;
+  height: 500px;
+  left: 0;
+  margin-left: 0;
+}
+.mov {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.watch {
+  width: 1400px;
+  cursor: pointer;
+}
+.play {
+  position: absolute;
+  width: 10%;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  animation: shake 2s infinite alternate;
+  margin-left: 100px;
+  margin-top: 75px;
+}
+h4 {
+  font-size: 80px;
+  position: absolute;
+  color: white;
+  margin-top: 350px;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  animation: shake 2s infinite alternate;
+}
+
+.side {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+.director {
+  font-family: "voluta-script-pro", sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: lighter;
+  text-align: justify;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.mod-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.movie-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+.film {
+  width: 340px;
+  height: 340px;
+  background-color: #efefef;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.footer {
+  margin-top: 40px;
+  background-color: #272727;
+  color: white;
+  font-family: monospace;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 0;
+}
+
+.footer-column h3 {
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+  margin-top: 20px;
+}
