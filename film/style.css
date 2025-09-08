@@ -1,0 +1,220 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  background-color: #eeeeec;
+  gap: 120px;
+}
+:root {
+  --logo-font: "neue-haas-grotesk-display", sans-serif;
+  --font-family: "panoptica-sans", sans-serif;
+  --font-second: "panoptica-egyptian", sans-serif;
+  --font-different: "panoptica-octagonal", sans-serif;
+  --font-different-script: "panoptica-script", sans-serif;
+  --font-Hitchcock: "professor-minty", sans-serif;
+  --font-size: 16px;
+  --color: #272727;
+  --color-second: #969696;
+  --color-third: #fc4b0c;
+  --color-fourth: #341b35;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.main-2 {
+  width: 465px;
+  background-color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+.logo p {
+  font-size: 30px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.menu {
+  display: flex;
+  gap: 25px;
+}
+#sign-in {
+  margin-left: 90px;
+}
+.symbol {
+  font-size: 14px; /* Sembole istediğiniz boyutu verin */
+  display: inline-block; /* Gerekirse inline-block olarak ayarlayın */
+}
+
+#sign-in:hover .symbol {
+  animation: spin 1s linear infinite; /* Sonsuz dönme */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+p,
+a {
+  font-family: "nudista-web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.menu a {
+  color: #272727;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #c7c7c7;
+}
+.section-2 {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.camera {
+  padding: 0;
+  width: 800px;
+  height: 600px;
+  margin-left: 0;
+}
+.lines {
+  display: flex;
+  flex-direction: column;
+}
+.line-1 {
+  position: relative;
+}
+
+.discover-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.group {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.cineUmbra {
+  font-weight: bold;
+  font-size: 16px;
+}
+/*
+b{
+   text-decoration: underline;
+   text-decoration-style: wavy;
+   text-decoration-color: #fc490b;
+
+}
+*/
+.name {
+  font-size: 12px;
+  text-align: center;
+}
+.poster {
+  width: 150px;
+  border-radius: 40px;
+}
+.movie-1 {
+  margin-top: 50px;
+}
+.movie-2 {
+  top: 0;
+  margin-top: 0;
+}
+.flower {
+  font-size: 100px;
+  color: #fc4b0c;
+  margin-left: 100px;
+}
+.countries {
+  font-size: 14px;
+  border-radius: 40px;
+  color: #272727;
+  text-align: justify;
+}
+.rus {
+  color: #c7c7c7;
+}
+.en {
+  font-size: 16px;
+  color: #272727;
+}
+#discover-button {
+  position: absolute;
+  padding: 8px 13px;
+  border: 1px solid #272727;
+  border-radius: 40px;
+  background-color: transparent;
+  margin-left: 140px;
+  cursor: pointer;
+}
+#discover-button:hover .symbol {
+  animation: spin 1s linear infinite; /* Sonsuz dönme */
+}
+#one {
+  width: 250px;
+}
+#two {
+  width: 180px;
+  height: 300px;
+}
+
+#four {
+  border-radius: 20px;
+}
+.hitchcock {
+  top: 0;
+  margin-top: 70px;
+  position: absolute;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 0;
+  font-family: var(--font-Hitchcock);
+}
+.directors img {
+  width: 410px;
+  animation: new linear;
+  animation-timeline: scroll();
+  margin: 0;
+  bottom: 0;
+}
+.line-3 {
+  font-size: 13px;
+  text-align: justify;
+}
+#directors-button {
+  padding: 8px 13px;
+  border: 1px solid #272727;
+  border-radius: 40px;
+  background-color: transparent;
+  margin-left: 143px;
+  cursor: pointer;
+}
+#directors-button:hover .symbol {
+  animation: spin 1s linear infinite; /* Sonsuz dönme */
+  color: var(--color-third);
+}
